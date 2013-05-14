@@ -3,6 +3,24 @@
   "version": "0.0.1",
   "description": "ERROR: No README.md file found!",
   "main": "index.js",
+  "dependencies": {
+    "draft": "0.0.x",
+    "level-model": "0.0.x"
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0",
+    "leveldown": "*",
+    "levelup": "*",
+    "level-js": "*"
+  },
+  "testling": {
+    "harness" : "mocha",
+    "files": "test/test-browser.js",
+    "browsers": {
+      "ff" : [ 20, 21 ],
+      "chrome" : [ 23, 24, 25 ]
+    }
+  },
   "scripts": {
     "test": "make test"
   },

@@ -1,0 +1,16 @@
+{
+  "name": "level-collection",
+  "repo": "jwerle/level-collection",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "jwerle/draft": "*",
+    "jwerle/level-model": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
