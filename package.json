@@ -4,14 +4,14 @@
   "description": "ERROR: No README.md file found!",
   "main": "index.js",
   "dependencies": {
-    "draft": "0.0.x",
-    "level-model": "0.0.x"
+    "draft": "0.0.x"
   },
   "devDependencies": {
     "mocha": "~1.9.0",
     "leveldown": "*",
     "levelup": "*",
-    "level-js": "*"
+    "level-js": "*",
+    "level-model": "0.0.x"
   },
   "testling": {
     "harness" : "mocha",

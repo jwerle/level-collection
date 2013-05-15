@@ -3,6 +3,7 @@
  */
 var draft   = require('draft')
   , isArray = Array.isArray
+  , hasOwn  = Object.hasOwnProperty
 
 /**
  * Exports
@@ -53,5 +54,19 @@ function collection (descriptor) {
 
 	collectionModel = collectionSchema.createModel();
 	collectionInstance = new collectionModel();
+	
+	for (var property in LevelCollection.prototype) {
+		if (hasOwn.call(LevelCollection.prototype, prop)
+	}
+
 	return collectionInstance.collection;	
 }
+
+/**
+ * Generic LevelCollection constructor
+ *
+ * @api public
+ * @inherits draft.Model
+ * @constructor LevelCollection
+ */
+var LevelCollection = collection.LevelCollection = function LevelCollection () {};
